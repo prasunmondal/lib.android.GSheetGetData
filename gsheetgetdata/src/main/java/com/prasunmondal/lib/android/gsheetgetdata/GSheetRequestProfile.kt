@@ -1,11 +1,8 @@
-package com.truiton.volleyblockingrequest.com.prasunmondal.lib.GSheetGetRequest
+package com.prasunmondal.lib.android.gsheetgetdata
 
 import android.content.Context
-import com.google.gson.reflect.TypeToken
-import com.truiton.volleyblockingrequest.Res
 import org.json.JSONObject
 import java.lang.reflect.Type
-import kotlin.reflect.KClass
 
 class GSheetRequestProfile {
     private var scriptID: String

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GSheetGetData.iml" filepath="$PROJECT_DIR$/GSheetGetData.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gsheetgetdata/gsheetgetdata.iml" filepath="$PROJECT_DIR$/gsheetgetdata/gsheetgetdata.iml" />
+    </modules>
+  </component>
+</project>

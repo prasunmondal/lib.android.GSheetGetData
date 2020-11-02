@@ -1,23 +1,19 @@
-package com.truiton.volleyblockingrequest.com.prasunmondal.lib.GSheetGetRequest
+package com.prasunmondal.lib.android.gsheetgetdata
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.os.AsyncTask
-import android.util.Log
 import com.android.volley.Request
 import com.android.volley.RequestQueue
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.RequestFuture
-import com.truiton.volleyblockingrequest.Res
 import org.json.JSONObject
 import java.util.concurrent.ExecutionException
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException
 
 import com.google.gson.*
-import com.google.gson.reflect.TypeToken
 import java.lang.reflect.Type
-import java.util.*
 
 class VolleyBlockingRequestCreate {
 
