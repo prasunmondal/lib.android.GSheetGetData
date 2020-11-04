@@ -25,9 +25,6 @@ class GSheetRequestProfile {
     }
 
     private fun getURL(): String {
-        if(generateURL != null) {
-            return generateURL!!
-        }
         generateURL = "https://script.google.com/macros/s/" + scriptID + "/exec?" +
                 "id=" + sheetID +
                 "&sheet=" + tabname +
