@@ -9,7 +9,7 @@ class GSheetRequestProfile {
     private var sheetID: String
     private var tabname: String
     private var serachColumn: Int
-    private var serachKey: String
+    private var searchKey: String
 
     private var generateURL: String? = null
     private var volleyObject: VolleyBlockingRequestCreate
@@ -19,7 +19,7 @@ class GSheetRequestProfile {
         this.sheetID = sheetID
         this.tabname = tabname
         this.serachColumn = serachColumn
-        this.serachKey = serachKey
+        this.searchKey = serachKey
 
         volleyObject = VolleyBlockingRequestCreate()
     }
@@ -31,12 +31,13 @@ class GSheetRequestProfile {
         generateURL = "https://script.google.com/macros/s/" + scriptID + "/exec?" +
                 "id=" + sheetID +
                 "&sheet=" + tabname +
-                "&matchValue=" + serachKey +
+                "&matchValue=" + searchKey +
                 "&matchCol=" + serachColumn
         return generateURL as String
     }
 
-    fun execute(context: Context, onComplete: (JSONObject) -> Unit) {
+    fun execute(context: Context, searchKey: String, onComplete: (JSONObject) -> Unit) {
+        this.searchKey = searchKey
         volleyObject.startParsingTask(context, getURL(), onComplete)
     }
 
